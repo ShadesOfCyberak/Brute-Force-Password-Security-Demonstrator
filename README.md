@@ -140,7 +140,7 @@ and developers visualize password search-space complexity. It:
 Use only passwords you own or are explicitly authorized to test. Do not use this tool against
 any account, system, or service without proper authorization.
 
-## 9. Possible Future Improvements
+## 8. Possible Future Improvements
 
 - Add a dictionary-attack simulation mode alongside pure brute force.
 - Add password-strength scoring (entropy bits) alongside the search-space calculator.
