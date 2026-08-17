@@ -140,15 +140,6 @@ and developers visualize password search-space complexity. It:
 Use only passwords you own or are explicitly authorized to test. Do not use this tool against
 any account, system, or service without proper authorization.
 
-## 8. Example Screenshots
-
-_Add screenshots of the running application here, for example:_
-
-- `docs/screenshot-dashboard.png` — full dashboard overview
-- `docs/screenshot-scanner.png` — Possibility Scanner mid-run
-- `docs/screenshot-found.png` — Password Found success state
-- `docs/screenshot-charts.png` — Attempts vs Time / Complexity charts
-
 ## 9. Possible Future Improvements
 
 - Add a dictionary-attack simulation mode alongside pure brute force.
