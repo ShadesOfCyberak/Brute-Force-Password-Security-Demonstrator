@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "JetBrains Mono Fallback";
+  src: local("Menlo"), local("Consolas");
+}
+
+html,
+body {
+  background-color: #020617;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.3) transparent;
+}
+
+/* ---------------------------------------------------------------------
+   Possibility Scanner animations
+--------------------------------------------------------------------- */
+
+@keyframes scan-chip-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.scan-chip {
+  animation: scan-chip-in 260ms ease-out both;
+}
+
+.scanner-grid {
+  position: relative;
+}
+
+@keyframes node-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(99, 102, 241, 0);
+  }
+}
+
+.scanner-node-active {
+  animation: node-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes status-dot-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+.status-pulse span {
+  animation: status-dot-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes success-glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 24px 4px rgba(16, 185, 129, 0.25);
+  }
+}
+
+.success-glow {
+  animation: success-glow-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes found-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.found-panel {
+  animation: found-panel-in 400ms ease-out both;
+}
+
+/* Monospace utility for algorithm-style output across the app */
+.font-mono {
+  font-family: "JetBrains Mono", "JetBrains Mono Fallback", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
